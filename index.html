@@ -12,34 +12,147 @@
     .font-sora{
         font-family: "Sora", serif;
     }
+    .background{
+    background-color: #FFF9F4;
+  }
+  .background-2{
+    background-color: #F9DF8A;
+  }
 </style>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sora">
     <header>
 <nav>
-    <div class="flex justify-around mt-7">
+    <div class="flex justify-around py-5 items-center background">
         <div class="flex items-center gap-10">
     <img src="image/logo-header.png" alt="">
-    <h3>
+    <h3 class="hidden sm:hidden md text-center:flex">
         browse<span class="text-yellow-500">4</span>pets
     </h3>
         </div>
         <div>
-     <ul class="flex">
+     <ul class="hidden sm:hidden md:hidden lg:flex gap-8">
         <li>find a pets</li>
         <li>breeds</li>
         <li>contact us</li>
      </ul>
+         
         </div>
-        <div>
-            <button class="bg-white border-yellow-300 rounded-md py-2 px-4">login</button>
+        <div class=" flex gap-4 items-center">
+            <div class="hidden sm:block">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <div class="hidden sm:block">
+                <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+            </div>
+              <div class="space-x-4 hidden sm:block">
+            </button>
+            <button class="bg-white rounded-md py-2 px-4 border border-yellow-400">login</button>
             <button class="bg-yellow-400 py-3 px-8 rounded-md">register</button>
+              </div>
+            <div class=" sm:hidden">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-8 w-6 stroke-current">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </div>
         </div>
     </div>
 </nav>
+<section class=" w-11/12 lg:w-10/12 mx-auto my-16 bg-[url('cat-big.png')] h-[340px] lg:h-[750px] bg-no-repeat bg-bottom bg-contain">
+    <div class="">
+        <div class="space-y-4 sm:space-y-8">
+        <h4 class=" text-3xl sm:text-5xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h4>
+        <p class="text-xs sm:text-xl">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+        <button class="bg-yellow-400 py-2 px-6 rounded-md">Find a pet</button>
+        </div>
+</section>
+</div>
     </header>
     <main>
+    <section class="w-11/12 lg:w-10/12 mx-auto my-20">
+        <h4 class="text-3xl my-8">brows my categories</h4>
+        <div class="flex flex-wrap gap-2 columns-2 row-span-3 justify-around">
+            <div class="background-2 w-40 h-56 rounded-md text-center flex flex-col items-center justify-center lg:w-52 lg:h-60">
+                <img class="bg-white rounded-full p-5 my-5" src="image/dog-cartoon.png" alt="">
+                <h4 class="text-2xl">dog</h4>
+                <p>items 3</p>
+            </div>
+            <div class="background-2 w-40 h-56 rounded-md text-center flex flex-col items-center justify-center lg:w-52 lg:h-60">
+                <img class="bg-white rounded-full p-5 my-5" src="image/fish-cartoon.png" alt="">
+                <h4 class="text-2xl">fish</h4>
+                <p>items 3</p>
+            </div>
+            <div class="background-2 w-40 h-56 rounded-md text-center flex flex-col items-center justify-center lg:w-52 lg:h-60">
+                <img class="bg-white rounded-full p-5 my-5" src="image/cat-cartoon.png" alt="">
+                <h4 class="text-2xl">cat</h4>
+                <p>items 3</p>
+            </div>
+            <div class="background-2 w-40 h-56 rounded-md text-center flex flex-col items-center justify-center lg:w-52 lg:h-60">
+                <img class="bg-white rounded-full p-5 my-5" src="image/bird-cartoon.png" alt="">
+                <h4 class="text-2xl">birds</h4>
+                <p>items 3</p>
+            </div>
+            <div class="background-2 w-40 h-56 rounded-md text-center flex flex-col items-center justify-center lg:w-52 lg:h-60">
+                <img class="bg-white rounded-full p-5 my-5" src="image/mouse-cartoon.png" alt="">
+                <h4 class="text-2xl">small Pet</h4>
+                <p>items 3</p>
+            </div>
+            <div class="background-2 w-40 h-56 rounded-md text-center flex flex-col items-center justify-center lg:w-52 lg:h-60">
+                <img class="bg-white rounded-full p-5 my-5" src="image/rabbit-cartoon.png" alt="">
+                <h4 class="text-2xl">rabit</h4>
+                <p>items 3</p>
+            </div>
+        </div>
+  </section>
+  <section>
+    <div class="background-2s">
+<h4>
+t-shirt for dogs
+</h4>
+<p>
+discover a world of treats,toys,and essentlals handpicked for
+</p>
+<button>shop now</button>
+<div>
+    <img src="image/cute-pet-small.png" alt="">
+</div>
+    </div>
+    <div>
 
+    </div>
+  </section>
     </main>
     <footer>
 
