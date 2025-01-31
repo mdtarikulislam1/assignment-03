@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-<style>
-    .font-sora{
-        font-family: "Sora", serif;
-    }
-    .background{
-    background-color: #FFF9F4;
-  }
-  .background-2{
-    background-color: #F9DF8A;
-  }
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font{
+            font-family:"Sora", serif;
+        }
+        .background{
+            background-color: #FFF9F4;
+        }
+        .background-2{
+            background-color: #F9DF8A;
+        }
+    </style>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sora">
+<body class="font">
     <header>
 <nav>
     <div class="flex justify-around py-5 items-center background border-b lg:border-b-0">
@@ -335,7 +335,7 @@
     <section class="w-11/12 lg:w-10/12 mx-auto my-10">
         <h4 class="text-3xl my-10 font-bold">Everyday low Price</h4>
         <div class="lg:flex gap-6">
-            <div class="bg-indigo-400 flex-1 lg:flex rounded-md lg:pl-72 lg:gap-36 my-5 pl-10 h-96 relative">
+            <div class="bg-gradient-to-br from-violet-300 to-blue-300 flex-1 rounded-md lg:pl-72 lg:gap-36 my-5 pl-10 h-96 relative">
                 <div class="lg:py-28">
                 <p class="hidden lg:flex">Under Price</p>
                 <h4 class="font-bold text-2xl py-10 lg:py-5">Pet Grooming Mitt</h4>
@@ -347,7 +347,7 @@
                 </div>
             </div>
             <div>
-                <div class="background-2 w-full lg:w-96 py-10 relative rounded-md h-96 my-5 pl-10">
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-300 w-full lg:w-96 py-10 relative rounded-md h-96 my-5 pl-10">
                     <div>
                     <h4 class="text-2xl font-bold">t-shirt for dogs</h4>
                     <h4 class="font-bold text-3xl text-yellow-700 py-5">$7.99</h4>
